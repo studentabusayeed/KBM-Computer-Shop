@@ -1,6 +1,7 @@
 import HomeBanner from '@/app/(home)/HomeBanner';
 import SideBanner from '@/app/(home)/SideBanner';
 import React from 'react';
+import CategorySection from './CategorySection';
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
             </aside>
             <aside className='col-span-3'>
             <HomeBanner/>
+            <CategorySection/>
             </aside>
         </section>
     );

@@ -24,3 +24,44 @@ body {
     
   }
   
+/* -----------------
+    Common Color 
+------------------- */
+
+.kbm-container {
+  @apply max-w-[1280px] w-full mx-auto py-10 md:py-12 lg:py-20 px-3;
+}
+.kbm-primary {
+    color: #000;
+}
+.kbm-secondary {
+    color: #000;
+}
+.kbm-white {
+    @apply text-white
+}
+.kbm-bg-primary {
+    background-color: #000;
+}
+.kbm-bg-secondary {
+    background-color: #000;
+}
+.kbm-bg-white {
+    @apply bg-white
+}
+
+/* -----------------
+    Scrollbar 
+------------------- */
+
+body::-webkit-scrollbar {
+  background-color: #1e2d40;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #0fcda1;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0fcda185;
+}
