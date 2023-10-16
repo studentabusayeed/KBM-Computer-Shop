@@ -1,13 +1,19 @@
 import HomeBanner from '@/app/(home)/HomeBanner';
+import SideBanner from '@/app/(home)/SideBanner';
 import React from 'react';
 import CategorySection from './CategorySection';
 
 const HomePage = () => {
     return (
-        <div className='w-full h-[calc(100vh-120px)] mt-auto'>
-            <HomeBanner />
-            <CategorySection />
-        </div>
+        <section className='w-full grid grid-rows-1 gap-3 grid-cols-4  mt-auto'>
+            <aside>
+                <SideBanner />
+            </aside>
+            <aside className='col-span-3'>
+            <HomeBanner/>
+            <CategorySection/>
+            </aside>
+        </section>
     );
 };
 
