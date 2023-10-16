@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-container {
+    @apply max-w-[2550px] px-2 md:px-6 lg:px-12 mx-auto;
+  }
