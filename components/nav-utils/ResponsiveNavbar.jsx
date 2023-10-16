@@ -3,14 +3,13 @@
 import { Menu, MenuButton, MenuItem } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { CgUserlane } from "react-icons/cg";
 import { HiOutlineLogout } from "react-icons/hi";
 import { MdClose, MdOutlineDashboardCustomize } from "react-icons/md";
 import { RiMenu2Line } from "react-icons/ri";
-// import { Link, Link, useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 
 import Link from "next/link";
 import Logo from "./Logo";
@@ -114,13 +113,13 @@ const ResponsiveNavbar = ({ menuItems }) => {
         <div className="pt-9">
           <div className=" px-4 flex justify-between items-center mb-5">
             <div>
-              <p className=" text-my-primary  font-bold xl:hidden">
+              <p className=" kbm-primary  font-bold xl:hidden">
                 Medicare <span className="text-my-accent">Point</span>
               </p>
             </div>
             <div className="text-2xl border-2 border-my-primary rounded-full p-1">
               <div onClick={() => setIsOpen("-ml-96")}>
-                <MdClose className="text-my-primary w-4 h-4 cursor-pointer" />
+                <MdClose className="kbm-primary w-4 h-4 cursor-pointer" />
               </div>
             </div>
           </div>

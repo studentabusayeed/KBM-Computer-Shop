@@ -11,8 +11,8 @@ const Logo = () => {
         alt="logo"
       />
       <div className=" hidden md:block text-center font-bold -space-y-1 text-lg">
-        <p className="text-my-primary "> KBM Computer</p>{" "}
-        <p className="text-my-accent ">Store</p>
+        <p className="kbm-primary"> KBM Computer</p>{" "}
+        <p className="kbm-secondary">Store</p>
       </div>
     </Link>
   );
