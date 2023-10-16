@@ -16,10 +16,11 @@ import banner6 from '@/assets/banner6.png';
 import banner7 from '@/assets/banner7.webp';
 // import required modules
 import { Pagination, Navigation, Autoplay} from 'swiper/modules';
+import Link from 'next/link';
 
 const HomeBanner = () => {
     return (
-        <div className='h-full w-9/12 ml-auto rounded-xl'>
+        <div>
               <Swiper 
                navigation={true}
                pagination={{
@@ -30,56 +31,70 @@ const HomeBanner = () => {
                 disableOnInteraction: false,
               }}
                modules={[Pagination, Navigation, Autoplay]} 
-               className="mySwiper h-full rounded-xl">
+               className="mySwiper h-full w-full rounded-xl">
 
         <SwiperSlide className='w-9/12 h-3/4 text-center'>
-            <Image 
+           <Link href="https://facebook.com">
+           <Image 
             className='h-full w-full'
             src={banner1}
             alt=''
             />
+           </Link> 
         </SwiperSlide>
         <SwiperSlide className='w-9/12 h-3/4 text-center'>
-            <Image 
+           <Link href="https://facebook.com">
+           <Image 
             className='h-full w-full'
             src={banner2}
             alt=''
             />
+           </Link> 
         </SwiperSlide>
         <SwiperSlide className='w-9/12 h-3/4 text-center'>
-            <Image 
+           <Link href="https://facebook.com">
+           <Image 
             className='h-full w-full'
             src={banner3}
             alt=''
             />
+           </Link> 
         </SwiperSlide>
         <SwiperSlide className='w-9/12 h-3/4 text-center'>
-            <Image 
+           <Link href="https://facebook.com">
+           <Image 
             className='h-full w-full'
             src={banner4}
             alt=''
             />
+           </Link> 
         </SwiperSlide>
         <SwiperSlide className='w-9/12 h-3/4 text-center'>
-            <Image 
+           <Link href="https://facebook.com">
+           <Image 
             className='h-full w-full'
             src={banner5}
             alt=''
             />
+           </Link> 
         </SwiperSlide>
         <SwiperSlide className='w-9/12 h-3/4 text-center'>
-            <Image 
+           <Link href="https://facebook.com">
+           <Image 
             className='h-full w-full'
             src={banner6}
             alt=''
             />
+           </Link> 
         </SwiperSlide>
         <SwiperSlide className='w-9/12 h-3/4 text-center'>
-            <Image 
+           <Link href="https://facebook.com">
+           <Image 
             className='h-full w-full'
             src={banner7}
             alt=''
             />
+           </Link> 
         </SwiperSlide>
        
       </Swiper>
