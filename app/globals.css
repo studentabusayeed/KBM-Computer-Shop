@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* -----------------
+  Navbar Utilities 
+------------------- */
+.nav-container {
+    @apply max-w-[2550px] px-2 md:px-6 lg:px-12 mx-auto;
+  }
+
+  /* .active {
+    @apply font-bold text-base tracking-wide text-title-color  uppercase underline;
+  }
+  .default {
+    @apply font-semibold text-base text-gray-6 tracking-wide  uppercase  hover:text-my-accent;
+  } */
+
 body {
     overflow-x: hidden;
     background-color: #fff;
@@ -32,19 +47,22 @@ body {
   @apply max-w-[1280px] w-full mx-auto py-10 md:py-12 lg:py-20 px-3;
 }
 .kbm-primary {
-    color: #000;
+    color: #015a24;
 }
 .kbm-secondary {
-    color: #000;
+    color: #427743;
 }
 .kbm-white {
     @apply text-white
 }
 .kbm-bg-primary {
-    background-color: #000;
+    background-color: #015a24;
 }
 .kbm-bg-secondary {
-    background-color: #000;
+    background-color: #427743;
+}
+.kbm-white {
+    @apply text-white
 }
 .kbm-bg-white {
     @apply bg-white

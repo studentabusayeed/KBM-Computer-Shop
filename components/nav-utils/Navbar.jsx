@@ -23,29 +23,29 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <li>
-        <Link href="/">Home</Link>
+      <li >
+        <Link href="/">Home </Link>
       </li>
       <li>
-        <Link href="/medicines">Medicines</Link>
+        <Link href="/shop">Shop </Link>
       </li>
       <li>
-        <Link href="/lab-test">Lab Test</Link>
+        <Link href="/pages">Pages </Link>
       </li>
       <li>
-        <Link href="/healthtips">Health Tips </Link>
+        <Link href="/element">Element </Link>
       </li>
       <li>
-        <Link href="/services">Services</Link>
+        <Link href="/services">Services </Link>
       </li>
       <li>
-        <Link href="/blogs">Blogs</Link>
+        <Link href="/blogs">Blogs </Link>
       </li>
       <li>
-        <Link href="/about-us">About Us</Link>
+        <Link href="/about-us">About Us </Link>
       </li>
       <li>
-        <Link href="/contract">Contacts</Link>
+        <Link href="/contract">Contacts </Link>
       </li>
     </>
   );

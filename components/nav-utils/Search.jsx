@@ -55,14 +55,14 @@ const Search = () => {
           type="text"
           name="searchField"
           value={search}
-          placeholder="Search Medicines"
+          placeholder="Search Your Product"
         />
         <button type="submit" onClick={() => setSearch("")} className={`pr-3 cursor-pointer right-10 absolute h-full rounded-e-full ${search ? "" : "hidden"}`}>
           <RxCross1 className="text-xl text-gray-5 ml-2" />
         </button>
 
-        <div className="pr-2 my-4 cursor-pointer right-0 absolute bg-yellow-300 h-full rounded-e-full">
-          <FiSearch className="text-3xl text-red-500 mt-[5px] ml-2" />
+        <div className="pr-2 my-4 cursor-pointer right-0 absolute kbm-bg-secondary h-full rounded-e-full">
+          <FiSearch className="text-3xl kbm-white mt-[5px] ml-2" />
         </div>
       </form>
 
