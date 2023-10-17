@@ -90,7 +90,7 @@ const ResponsiveNavbar = ({ menuItems }) => {
               </div>
             ) : (
               <div className="flex flex-col gap-2 divide-y-2 divide-gray-3">
-                <Link className=" font-semibold text-neutral-600" href="/login">
+                <Link className=" font-semibold text-neutral-600" href="/Login">
                   <MenuItem className="gap-4 items-center">
                     <BiLogInCircle className="text-xl" />
                     Login

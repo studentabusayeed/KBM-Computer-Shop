@@ -19,7 +19,7 @@ import NavCart from "./NavCart";
 import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const Navbar = () => {
-  const user = true;
+  const user = false;
 
   const menuItems = (
     <>
@@ -83,7 +83,7 @@ const Navbar = () => {
   }, [prevScrollY]);
 
   return (
-    <div className="mb-[122px]">
+    <div className="mb-[100px]">
       <div
         className={`${
           visible ? "block" : "hidden"
@@ -135,7 +135,7 @@ const Navbar = () => {
                       <div className="flex flex-col gap-2 divide-y-2 divide-gray-3">
                         <Link
                           className=" font-semibold text-neutral-600"
-                          href="/login"
+                          href="/Login"
                         >
                           <MenuItem className="gap-4 items-center">
                             <BiLogInCircle className="text-xl 2xl:text-3xl" />
