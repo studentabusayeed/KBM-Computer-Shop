@@ -2,42 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* -----------------
   Navbar Utilities 
 ------------------- */
 .nav-container {
-    @apply max-w-[2550px] px-2 md:px-6 lg:px-12 mx-auto;
-  }
-
-  /* .active {
-    @apply font-bold text-base tracking-wide text-title-color  uppercase underline;
-  }
-  .default {
-    @apply font-semibold text-base text-gray-6 tracking-wide  uppercase  hover:text-my-accent;
-  } */
+  @apply max-w-[2550px] px-2 md:px-6 lg:px-12 mx-auto;
+}
 
 body {
-    overflow-x: hidden;
-    background-color: #fff;
-  }
+  overflow-x: hidden;
+  background-color: #fff;
+}
 
-.main-container {
-    @apply max-w-[1280px] min-h-[calc(100vh-200px)] w-full mx-auto px-3;
-  }
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 86.6px solid #000;
+}
 
-  .triangle {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 86.6px solid #000;
-  }
-
-  .title{
-    border-top-right-radius: 999px;
-    
-  }
+.title{
+  border-top-right-radius: 999px;
+  
+}
   
 /* -----------------
     Common Color 
@@ -47,22 +35,19 @@ body {
   @apply max-w-[1280px] w-full mx-auto py-10 md:py-12 lg:py-20 px-3;
 }
 .kbm-primary {
-    color: #015a24;
+    color: #427743;
 }
 .kbm-secondary {
-    color: #427743;
+    color: #69b46b;
 }
 .kbm-white {
     @apply text-white
 }
 .kbm-bg-primary {
-    background-color: #015a24;
-}
-.kbm-bg-secondary {
     background-color: #427743;
 }
-.kbm-white {
-    @apply text-white
+.kbm-bg-secondary {
+    @apply bg-[#69b46b]
 }
 .kbm-bg-white {
     @apply bg-white
@@ -73,13 +58,13 @@ body {
 ------------------- */
 
 body::-webkit-scrollbar {
-  background-color: #1e2d40;
-  width: 10px;
+  background-color: transparent;
+  width: 12px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #0fcda1;
+  background-color: #69b46b;
   border-radius: 20px;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #0fcda185;
+  background-color: #427743;
 }
