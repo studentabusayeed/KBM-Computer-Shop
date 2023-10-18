@@ -23,6 +23,7 @@ const ProductSortingMenu = () => {
                         </MenuButton>
                     }
                     transition
+                    isOpen={isMenuOpen}
                 >
                     <MenuItem onClick={() => handelSort("phtl")} className="font-medium text-gray-5">
                         Price low to high

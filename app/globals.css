@@ -62,9 +62,9 @@ body::-webkit-scrollbar {
   width: 12px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #69b46b;
+  background-color: #427743;
   border-radius: 20px;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #427743;
+  background-color: #69b46b;
 }
