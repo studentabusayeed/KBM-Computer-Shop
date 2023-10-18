@@ -1,12 +1,13 @@
 import ProductCard from '@/components/CardDesign/ProductCard';
 import ProductSortingMenu from '@/components/ProductSortingMenu';
+import SideBar from '@/components/SideBar/SideBar';
 
 const ProductsPage = () => {
     return (
         <section>
             <div className="kbm-container !pt-0 flex gap-3">
-                <div className='basis-1/4 kbm-bg-secondary'>
-                    <h3 className='text-xl font-bold'>SideBar</h3>
+                <div className='basis-1/4'>
+                    <SideBar />
                 </div>
                 <div className='basis-3/4'>
                     {/* <h3 className='text-xl font-bold'>main content</h3> */}
