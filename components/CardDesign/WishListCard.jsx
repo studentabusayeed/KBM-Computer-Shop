@@ -1,15 +1,19 @@
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
 import image1 from '@/assets/category-img-1.jpg';
 // import { Rating, StickerStar } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css'
 import { BiCartAdd } from 'react-icons/bi';
-import { BsEye, BsHeart } from 'react-icons/bs';
+import { BsEye, BsHeart, BsHeartFill } from 'react-icons/bs';
 import { TbArrowsExchange } from 'react-icons/tb';
+import { useState } from 'react';
+const WishListCard = () => {
 
 
-const ProductCard = () => {
+    const [clicked, setClicked] = useState(true);
    
+
     return (
         <div className="bg-white rounded-md shadow-md lg:shadow-lg border border-transparent border-[#427743] border-opacity-20 overflow-hidden transition-shadow relative group h-fit">
             <p className="kbm-bg-secondary z-10 rounded py-1 px-2 text-xs lg:font-medium text-white absolute top-3 left-3"> -12% OFF</p>
@@ -23,7 +27,14 @@ const ProductCard = () => {
                     <div className='opacity-0 group-hover:opacity-100 flex flex-col gap-2 absolute right-1 top-1/2 -translate-y-1/2 transition-all duration-300'>
                         <BsEye className='w-5 h-5 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-secondary' />
                         <TbArrowsExchange className='w-5 h-5 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-secondary' />
-                        <BsHeart className='w-5 h-5 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-secondary' />
+                       <button  onClick={() => setClicked(!clicked)} >
+        {
+            clicked ? <BsHeartFill className='w-5 h-5 p-1 rounded box-content shadow-lg
+            cursor-pointer kbm-bg-white text-red-500' /> :
+      <BsHeart className='w-5 h-5 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white text-red-500' />  
+      }
+                        
+                       </button>
                     </div>
                 </div>
                 <div className='p-2'>
@@ -52,4 +63,4 @@ const ProductCard = () => {
     );
 };
 
-export default ProductCard;
+export default WishListCard;
