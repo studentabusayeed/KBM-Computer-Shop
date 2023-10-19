@@ -11,7 +11,7 @@ import { TbArrowsExchange } from 'react-icons/tb';
 const ProductCard = () => {
    
     return (
-        <div className="bg-white rounded-md shadow-md lg:shadow-lg border border-transparent border-[#427743] border-opacity-20 overflow-hidden transition-shadow relative group h-fit">
+        <div className="bg-white rounded-md shadow-md hover:shadow-xl overflow-hidden transition-shadow relative group h-fit">
             <p className="kbm-bg-secondary z-10 rounded py-1 px-2 text-xs lg:font-medium text-white absolute top-3 left-3"> -12% OFF</p>
             <div className="card-body space-y-1">
                 <div className='relative'>
@@ -20,10 +20,10 @@ const ProductCard = () => {
                         src={image1}
                         alt=''
                     />
-                    <div className='opacity-0 group-hover:opacity-100 flex flex-col gap-2 absolute right-1 top-1/2 -translate-y-1/2 transition-all duration-300'>
-                        <BsEye className='w-5 h-5 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-secondary' />
-                        <TbArrowsExchange className='w-5 h-5 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-secondary' />
-                        <BsHeart className='w-5 h-5 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-secondary' />
+                    <div className='opacity-0 group-hover:opacity-100 translate-x-20 group-hover:translate-x-0 flex flex-col gap-2 absolute right-1 top-1/2 -translate-y-1/2 transition-all duration-300'>
+                        <BsEye className='w-4 h-4 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-primary border border-[#427743]' />
+                        <TbArrowsExchange className='w-4 h-4 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-primary border border-[#427743]' />
+                        <BsHeart className='w-4 h-4 p-1 rounded box-content shadow-lg cursor-pointer kbm-bg-white kbm-primary border border-[#427743]' />
                     </div>
                 </div>
                 <div className='p-2'>
@@ -44,8 +44,8 @@ const ProductCard = () => {
                         </p>
                     </div>
                 </div>
-                <button className='kbm-bg-secondary flex items-center gap-1 py-2 px-5 w-5/6 mx-auto justify-center kbm-white rounded-md uppercase' type="button">
-                    <BiCartAdd className="text-xs lg:text-xl" /> add to cart
+                <button className='kbm-bg-primary flex items-center gap-1 py-2 w-full justify-center kbm-white rounded-md uppercase text-sm' type="button">
+                    <BiCartAdd className="text-base md:text-xl" /> add to cart
                 </button>
             </div>
         </div>
