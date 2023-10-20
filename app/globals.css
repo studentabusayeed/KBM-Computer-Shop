@@ -14,6 +14,7 @@
 body {
   overflow-x: hidden;
   background-color: #fff;
+  font-family: Satoshi, sans-serif;
 }
 
 .triangle {
@@ -43,7 +44,7 @@ body {
     color: #69b46b;
 }
 .kbm-white {
-    @apply text-white
+    @apply text-[#fff]
 }
 .kbm-bg-primary {
     background-color: #427743;
