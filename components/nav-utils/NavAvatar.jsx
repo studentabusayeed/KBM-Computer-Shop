@@ -1,5 +1,6 @@
 'use client'
 import { Dropdown, Avatar, DropdownItem, DropdownMenu, DropdownTrigger, Navbar, NavbarContent } from "@nextui-org/react";
+import Link from "next/link";
 
 const NavAvatar = () => {
   return (
@@ -16,7 +17,7 @@ const NavAvatar = () => {
             />
           </DropdownTrigger>
           <DropdownMenu aria-label="Profile Actions" variant="flat">
-            <DropdownItem key="dashbaord">Dashboard</DropdownItem>
+            <DropdownItem key="dashbaord"><Link href="/account/user-account" className="w-full h-full block" >Dashboard</Link></DropdownItem>
             <DropdownItem key="logout" color="danger">
               Log Out
             </DropdownItem>
