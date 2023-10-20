@@ -3,6 +3,7 @@ import Search from "./Search";
 import NavCart from "./NavCart";
 import Language from "./Lang";
 import NavAvatar from "./NavAvatar";
+import NavWishlist from "@/components/nav-utils/NavWishlist";
 
 const Navbar = () => {
 
@@ -19,6 +20,7 @@ const Navbar = () => {
               
               <div className="flex items-center gap-4 lg:gap-10">
                 <Language />
+                <NavWishlist/>
                 <NavCart />
               <NavAvatar/>
                 
