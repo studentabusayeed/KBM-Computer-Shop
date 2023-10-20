@@ -1,5 +1,5 @@
 'use client'
-import { Divider } from '@nextui-org/react';
+// import { Divider } from '@nextui-org/react';
 import Link from 'next/link';
 import React from 'react';
 import { FaCartPlus, FaCreditCard, FaHeart, FaShoppingBag, FaSignOutAlt, FaThumbsUp, FaTicketAlt, FaUser } from "react-icons/fa";
