@@ -1,0 +1,22 @@
+
+.apexcharts-legend-text {
+    @apply !text-[#64748B] ;
+  }
+  .apexcharts-text {
+    @apply !fill-[#64748B] ;
+  }
+  .apexcharts-xcrosshairs {
+    @apply !fill-[#E2E8F0] ;
+  }
+/*   body: "#64748B",
+      white: "#fff",
+      bodydark: "#AEB7C0",
+      stroke: "#E2E8F0", */
+  .apexcharts-gridline {
+    @apply !stroke-[#E2E8F0] ;
+  }
+  
+  .apexcharts-legend-series {
+    @apply !inline-flex gap-1.5;
+  }
+  
