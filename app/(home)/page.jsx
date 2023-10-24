@@ -5,15 +5,18 @@ import CategorySection from './CategorySection';
 
 const HomePage = () => {
     return (
+        <>
+        
         <section className='w-full grid grid-rows-1 gap-3 grid-cols-4  mt-auto'>
             <aside>
                 <SideBanner />
             </aside>
             <aside className='col-span-3'>
             <HomeBanner/>
-            <CategorySection/>
             </aside>
         </section>
+            <CategorySection/>
+        </>
     );
 };
 

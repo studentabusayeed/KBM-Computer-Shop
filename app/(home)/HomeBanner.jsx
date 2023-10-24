@@ -21,6 +21,7 @@ import Link from 'next/link';
 const HomeBanner = () => {
     return (
         <div>
+         
               <Swiper 
                navigation={true}
                pagination={{

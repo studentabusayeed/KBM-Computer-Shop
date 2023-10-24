@@ -1,35 +1,21 @@
-"use client"
+'use client'
+import React from "react";
+import { Select, SelectItem } from "@nextui-org/react";
 
-import { useState } from "react";
-import { LiaAngleDownSolid, LiaAngleUpSolid } from "react-icons/lia";
-
-const Lang = () => {
-  const [donwOpen, setDownOpen] = useState(true);
-  const [language, setLanguage] = useState("English");
-
+export default function Language() {
   return (
-    <div className="relative">
-      <button type="button" onClick={() => setDownOpen(!donwOpen)} className=" flex gap-2 items-center btn btn-sm border-none w-32 h-10">
-        <p> {language}</p> {donwOpen ? <LiaAngleDownSolid className="text-lg" /> : <LiaAngleUpSolid className="text-lg" />}
-      </button>
-
-      {!donwOpen && (
-        <div className="bg-white z-10 text-center space-y-2 py-4 absolute w-32 mt-1 drop-shadow-2xl rounded-md">
-          <div onClick={() => setDownOpen(!donwOpen)} className="w-full">
-            <button type="button" onClick={() => setLanguage("English")}>
-              English
-            </button>
-          </div>
-          <hr className=" border-gray-3" />
-          <div onClick={() => setDownOpen(!donwOpen)} className="w-full">
-            <button type="button" onClick={() => setLanguage("Bangla")}>
-              Bangla
-            </button>
-          </div>
-        </div>
-      )}
+    <div className="flex w-28 flex-wrap md:flex-nowrap gap-4">
+      <Select
+     placeholder="English"
+        className="max-w-xs !py-0"
+      >
+        <SelectItem>
+          English
+        </SelectItem>
+        <SelectItem>
+          Bangla
+        </SelectItem>
+      </Select>
     </div>
   );
-};
-
-export default Lang;
+}
