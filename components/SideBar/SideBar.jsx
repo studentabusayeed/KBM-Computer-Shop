@@ -1,7 +1,7 @@
 "use client"
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import PriceRange from './PriceRange';
+import PriceRange from './PriceRange/PriceRange';
 import Brand from './Brand';
 import ProcessorType from "./ProcessorType";
 import ProcessorModel from "./ProcessorModel";

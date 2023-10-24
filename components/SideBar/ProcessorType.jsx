@@ -3,11 +3,11 @@ import React from 'react';
 
 const ProcessorType = () => {
     return (
-        <div className='flex flex-col gap-0.5 pb-3'>
-            <Checkbox size="sm" color="success" >Intel</Checkbox>
-            <Checkbox size="sm" color="success">AMD</Checkbox>
-            <Checkbox size="sm" color="success">Apple</Checkbox>
-            <Checkbox size="sm" color="success">Microsoft</Checkbox>
+        <div className='flex flex-col gap-1 pb-3'>
+            <Checkbox size="sm" color="success" className='p-0 m-0'>Intel</Checkbox>
+            <Checkbox size="sm" color="success" className='p-0 m-0'>AMD</Checkbox>
+            <Checkbox size="sm" color="success" className='p-0 m-0'>Apple</Checkbox>
+            <Checkbox size="sm" color="success" className='p-0 m-0'>Microsoft</Checkbox>
         </div>
     );
 };
