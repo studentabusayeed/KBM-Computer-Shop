@@ -39,10 +39,10 @@ const productDetails = () => {
     <div className="px-[3rem]">
       <div className="grid grid-cols-2 gap-8">
         <div>
-        <Magnifier
+        {/* <Magnifier
         imageSrc="./banner6.png"
         imageAlt="Image Alt Text"
-      />
+      /> */}
           <div className="border-2 flex py-8">
             <Image
               src={img1}
@@ -183,6 +183,7 @@ const productDetails = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
