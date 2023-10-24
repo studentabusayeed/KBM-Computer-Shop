@@ -14,8 +14,15 @@ import {
   BsStarHalf,
 } from "react-icons/bs";
 import { FaCartPlus, FaMinus, FaPlus, FaShoppingBag } from "react-icons/fa";
-import { Magnifier } from "react-image-magnifiers";
 import KbmButton from "@/components/KbmButton/KbmButton";
+import {
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION
+} from "react-image-magnifiers";
 
 const productDetails = () => {
   const params = useParams();
@@ -41,19 +48,31 @@ const productDetails = () => {
       <div className="grid grid-cols-2 gap-8">
         <div>
           <Magnifier
-            imageSrc="./banner6.png"
+            imageSrc={img1.src}
             imageAlt="Image Alt Text"
+          />
+          <GlassMagnifier
+            imageSrc={img1.src}
+            imageAlt="Example"
+            largeImageSrc="./large-image.jpg" // Optional
+          />
+          <Magnifier
+            imageSrc={img1.src}
+            imageAlt="Example"
+            largeImageSrc={img1} // Optional
+            mouseActivation={MOUSE_ACTIVATION.DOUBLE_CLICK} // Optional
+            touchActivation={TOUCH_ACTIVATION.DOUBLE_TAP} // Optional
           />
           {/* <Magnifier
         imageSrc="./banner6.png"
         imageAlt="Image Alt Text"
       /> */}
           <div className="border-2 flex py-8">
-            <Image
+            {/* <Image
               src={img1}
               alt="image"
               className="h-[20rem] w-[23rem] mx-auto"
-            />
+            /> */}
             <div className="flex-col space-y-2 my-auto pr-6">
               <Image
                 src={img1}
@@ -185,7 +204,7 @@ const productDetails = () => {
               Add to Cart
             </Button>
           </div> */}
-          <div className="space-x-2 mt-2">
+          <div className="flex gap-2 mt-2 max-w-125 text-sm">
             <KbmButton />
             <KbmButton btnType={'kbm-solid'} btnText={'buy now'} btnIcon={<FaShoppingBag className='w-5 h-5' />} />
           </div>

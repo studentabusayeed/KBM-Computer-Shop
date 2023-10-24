@@ -8,11 +8,12 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import SectionTitle from '@/components/SectionTitle';
+import './CategorySection.css'
 
 const CategorySection = () => {
     return (
         <div>
-           <SectionTitle title="All Categories"/>
+            <SectionTitle title="All Categories" />
             <div className="shopby-category">
                 <Swiper
                     slidesPerView={1}

@@ -9,67 +9,69 @@ const SubNavbar = () => {
 
     const routers = [
         {
-            path: '/profile',
-            title: 'Profile',
-            icon: <FaUser/>
+            path: '/products',
+            title: 'Products',
+            icon: <FaUser />
         },
         {
             path: '/orders',
             title: 'Orders',
-            icon: <FaShoppingBag/>
+            icon: <FaShoppingBag />
         },
         {
             path: '/transaction',
             title: 'Transaction',
-            icon: <FaCreditCard/>
+            icon: <FaCreditCard />
         },
         {
             path: '/wishlist',
             title: 'Wishlist',
-            icon: <FaHeart/>
+            icon: <FaHeart />
         },
         {
             path: '/my-cart',
             title: 'My Cart',
-            icon: <FaCartPlus/>
+            icon: <FaCartPlus />
         },
         {
             path: '/vouchers',
             title: 'Vouchers',
-            icon: <FaTicketAlt/>
+            icon: <FaTicketAlt />
         },
         {
             path: '/my-reviews',
             title: 'My Reviews',
-            icon: <FaThumbsUp/>
+            icon: <FaThumbsUp />
         },
         {
             path: '/logout',
             title: 'Logout',
-            icon: <FaSignOutAlt/>
-            
+            icon: <FaSignOutAlt />
+
         },
     ]
 
     return (
-       
-      <div className="hidden xl:block sticky bg-white z-40 top-0">
-      <div className="nav-container">
-        <div className="py-2">
-          <ul className="flex items-center justify-between text-md font-semibold text-gray-5 hover:text-gray-6 py-1 2xl:py-2">
-         {
-          routers.map(route => <li key={route.path}>
-            <Link href={route?.path}>
-           <span className="border-r pr-5"> {route?.title}
-           </span>
-            </Link>
-          </li>)
-         }
-          </ul>
+        <div className="sticky bg-white z-40 top-0 shadow-md border-b border-gray-200">
+            <div className="max-w-[1280px] w-full mx-auto px-3">
+                <div className="py-2">
+                    <ul className="flex items-center justify-between  text-md font-semibold text-gray-5 hover:text-gray-6 py-1 2xl:py-2">
+                        {
+                            routers.map((route, index) => <>
+                                <li key={route.path}>
+                                    <Link href={route?.path}>
+                                        <span>
+                                            {route?.title}
+                                        </span>
+                                    </Link>
+                                </li>
+                                {index < routers.length - 1 && <div className="w-[2px] h-5 bg-slate-300"></div>}
+                            </>)
+                        }
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <hr className=" border-1 border-gray-3 drop-shadow-xl" />
-    </div>
     );
 };
 
