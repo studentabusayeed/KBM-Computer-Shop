@@ -44,6 +44,10 @@ const productDetails = () => {
             imageSrc="./banner6.png"
             imageAlt="Image Alt Text"
           />
+          {/* <Magnifier
+        imageSrc="./banner6.png"
+        imageAlt="Image Alt Text"
+      /> */}
           <div className="border-2 flex py-8">
             <Image
               src={img1}
@@ -187,6 +191,7 @@ const productDetails = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
