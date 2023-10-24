@@ -1,7 +1,7 @@
 "use client";
 
+import React, { useState } from "react";
 import { useParams } from "next/navigation";
-import { useState } from "react";
 import img1 from "../../../assets/banner1.webp";
 import Image from "next/image";
 import { Button, Chip } from "@nextui-org/react";
@@ -13,8 +13,9 @@ import {
   BsStarFill,
   BsStarHalf,
 } from "react-icons/bs";
-import { FaMinus, FaPlus } from "react-icons/fa";
+import { FaCartPlus, FaMinus, FaPlus, FaShoppingBag } from "react-icons/fa";
 import { Magnifier } from "react-image-magnifiers";
+import KbmButton from "@/components/KbmButton/KbmButton";
 
 const productDetails = () => {
   const params = useParams();
@@ -39,10 +40,10 @@ const productDetails = () => {
     <div className="px-[3rem]">
       <div className="grid grid-cols-2 gap-8">
         <div>
-        <Magnifier
-        imageSrc="./banner6.png"
-        imageAlt="Image Alt Text"
-      />
+          <Magnifier
+            imageSrc="./banner6.png"
+            imageAlt="Image Alt Text"
+          />
           <div className="border-2 flex py-8">
             <Image
               src={img1}
@@ -79,7 +80,7 @@ const productDetails = () => {
                 emptySymbol={<BsStar className="text-yellow-400" />}
                 fullSymbol={<BsStarFill className="text-yellow-400" />}
                 halfSymbol={<BsStarHalf className="text-yellow-400" />}
-                // readonly // Set this to true if you want to make it read-only
+              // readonly // Set this to true if you want to make it read-only
               />
               <p className="ml-1 font-light text-sm">7/10</p>
             </div>
@@ -137,8 +138,8 @@ const productDetails = () => {
               Extra Large
             </Chip>
           </div>
-                    
-         {/* price and quantity  */}
+
+          {/* price and quantity  */}
           <div className="flex items-center space-x-10 my-4">
             <div>
               <h3 className="text-2xl font-bold">$ {totalPrice}</h3>{" "}
@@ -152,9 +153,8 @@ const productDetails = () => {
                   <button
                     onClick={decrementQuantity}
                     disabled={quantity === 1}
-                    className={`px-4 py-2 rounded-full bg-gray-300 hover:bg-gray-400 ${
-                      quantity === 1 ? "cursor-not-allowed" : "cursor-pointer"
-                    }`}
+                    className={`px-4 py-2 rounded-full bg-gray-300 hover:bg-gray-400 ${quantity === 1 ? "cursor-not-allowed" : "cursor-pointer"
+                      }`}
                   >
                     <FaMinus className="text-lg kbm-primary" />
                   </button>
@@ -175,11 +175,15 @@ const productDetails = () => {
             </div>
           </div>
 
-          <div className="space-x-2 mt-2">
+          {/* <div className="space-x-2 mt-2">
             <Button className="kbm-bg-primary text-white">Buy Now</Button>
             <Button variant="bordered" className="border-[#427743] kbm-primary">
               Add to Cart
             </Button>
+          </div> */}
+          <div className="space-x-2 mt-2">
+            <KbmButton />
+            <KbmButton btnType={'kbm-solid'} btnText={'buy now'} btnIcon={<FaShoppingBag className='w-5 h-5' />} />
           </div>
         </div>
       </div>
