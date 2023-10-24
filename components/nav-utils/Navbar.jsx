@@ -9,9 +9,7 @@ const Navbar = () => {
 
 
   return (
-    <div
-      className={`w-full bg-white transition-all relative top-0 z-50 duration-700 ease-in-out border-b border-gray-200`}
-    >
+    <div className={`w-full bg-white transition-all relative top-0 z-50 duration-700 ease-in-out border-b border-gray-200`}>
       <div className="max-w-[1280px] w-full mx-auto px-3">
         <div>
           <div className="flex items-center py-2 justify-between">
