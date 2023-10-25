@@ -1,4 +1,4 @@
-const KbmTitle = () => {
+const KbmTitle = ({title, subTitle}) => {
   return (
     <div className="my-5">
       <div className="pl-4 md:pl-0 relative z-0">
@@ -7,11 +7,11 @@ const KbmTitle = () => {
           <div className="h-14 w-2 -skew-x-[20deg] z-10 kbm-bg-primary"></div>
           <div className="flex flex-col justify-end relative h-14 w-90 -skew-x-[20deg] kbm-bg-primary">
             <h2 className="pl-10 uppercase pb-1 font-semibold kbm-white text-2xl tracking-wider skew-x-[20deg]">
-                All Categories 
+                {title} 
             </h2>
             <div className="translate-x-5 md:translate-x-1/2 self-end -mb-2 -skew-x-[20deg] kbm-bg-secondary">
                 <h4 className="py-[1px] px-5 text-center uppercase kbm-white text-xs tracking-wider skew-x-[35deg]">
-                Unlimited Category Choices 
+                {subTitle} 
                 </h4>
             </div>
           </div>
