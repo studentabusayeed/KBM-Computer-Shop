@@ -14,7 +14,7 @@ const CategoryCard = () => {
             </h2>
             <Image
                 className='h-28 w-full object-cover'
-                src={image2}
+                src={image1}
                 alt='Category Image'
             />
         </div>
