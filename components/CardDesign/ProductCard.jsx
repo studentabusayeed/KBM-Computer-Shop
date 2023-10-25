@@ -6,7 +6,7 @@ import '@smastrom/react-rating/style.css'
 import { BiCartAdd } from 'react-icons/bi';
 import { BsEye, BsHeart } from 'react-icons/bs';
 import { TbArrowsExchange } from 'react-icons/tb';
-import KbmButton from '../KbmButton/KbmButton';
+import KbmButton from '../Utilities/KbmButton/KbmButton';
 
 
 const ProductCard = () => {

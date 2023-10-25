@@ -12,10 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="transition-all">
       <body>
-        <div className="min-h-screen">
+        <div>
           <Navbar />
           <SubNavbar />
-          <main className={`mt-16`}>
+          <main>
             <Providers>
               {children}
             </Providers>

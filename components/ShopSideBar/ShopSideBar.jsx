@@ -6,7 +6,7 @@ import Brand from './Brand';
 import ProcessorType from "./ProcessorType";
 import ProcessorModel from "./ProcessorModel";
 
-const SideBar = () => {
+const ShopSideBar = () => {
     const itemClasses = {
         root: 'my-accordion-item',
         header: 'my-accordion-header',
@@ -43,7 +43,7 @@ const SideBar = () => {
                 className='!shadow'
                 key="4"
                 aria-label="Processor Model"
-                title={<span className="font-semibold">Processor Type</span>}
+                title={<span className="font-semibold">Processor Model</span>}
             >
                 <ProcessorModel />
             </AccordionItem>
@@ -51,4 +51,4 @@ const SideBar = () => {
     );
 };
 
-export default SideBar;
+export default ShopSideBar;

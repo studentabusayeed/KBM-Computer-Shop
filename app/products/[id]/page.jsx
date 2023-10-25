@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+// import KbmTitle from "@/components/KbmTitle/KbmTitle";
 import { useParams } from "next/navigation";
-import img1 from "../../../assets/banner1.webp";
 import Image from "next/image";
-import { Button, Chip } from "@nextui-org/react";
+import { Chip } from "@nextui-org/react";
 import ReactRating from "react-rating";
 import {
   BsDashCircleDotted,
@@ -16,12 +16,20 @@ import {
   BsStarHalf,
 } from "react-icons/bs";
 import { FaShoppingBag } from "react-icons/fa";
-import KbmButton from "@/components/KbmButton/KbmButton";
 import Reviews from "./Reviews";
 import Details from "./Details";
 import SimilarProduct from "./SimilarProduct";
-import KbmTitle from "@/components/KbmTitle/KbmTitle";
-import ReactImageMagnify from 'react-image-magnify';
+import KbmButton from "@/components/Utilities/KbmButton/KbmButton";
+import KbmTitle from "@/components/Utilities/KbmTitle/KbmTitle";
+import img1 from "../../../assets/banner1.webp";
+import {
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION
+} from "react-image-magnifiers";
 
 const productDetails = () => {
   const params = useParams();
