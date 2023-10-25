@@ -5,7 +5,7 @@ const KbmTitle = ({ title, subTitle }) => {
         <div className="relative flex items-center gap-2">
           <div className="absolute left-7 z-20 h-24 w-4 -skew-x-[20deg] kbm-bg-secondary"></div>
           <div className="h-14 w-2 -skew-x-[20deg] z-10 kbm-bg-primary"></div>
-          <div className="flex flex-col justify-end relative h-14 w-75 md:w-90 -skew-x-[20deg] kbm-bg-primary">
+          <div className="flex flex-col justify-end pr-10 relative h-14 -skew-x-[20deg] kbm-bg-primary">
             <h2 className="pl-10 uppercase pb-1 font-semibold kbm-white text-2xl tracking-wider skew-x-[20deg]">
               {title}
             </h2>

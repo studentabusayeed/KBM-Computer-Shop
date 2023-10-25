@@ -8,16 +8,16 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "./CategorySection.css";
-import KbmTitle from "@/components/KbmTitle/KbmTitle";
+import KbmTitle from "@/components/Utilities/KbmTitle/KbmTitle";
 
 const CategorySection = () => {
   return (
     <section>
       <div className='max-w-[1280px] w-full mx-auto px-3'>
-        <KbmTitle
+        {/* <KbmTitle
           title={"All Categories"}
           subTitle={"Unlimited Category Choices"}
-        />
+        /> */}
         <div className="shopby-category">
           <Swiper
             slidesPerView={1}

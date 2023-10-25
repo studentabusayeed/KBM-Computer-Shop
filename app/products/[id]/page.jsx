@@ -14,7 +14,7 @@ import {
   BsStarHalf,
 } from "react-icons/bs";
 import { FaCartPlus, FaMinus, FaPlus, FaShoppingBag } from "react-icons/fa";
-import KbmButton from "@/components/KbmButton/KbmButton";
+import KbmButton from "@/components/Utilities/KbmButton/KbmButton";
 import {
   Magnifier,
   GlassMagnifier,
