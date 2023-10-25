@@ -9,7 +9,7 @@ const KbmTitle = ({ title, subTitle }) => {
             <h2 className="pl-10 uppercase pb-1 font-semibold kbm-white text-2xl tracking-wider skew-x-[20deg]">
               {title}
             </h2>
-            <div className="translate-x-5 md:translate-x-1/2 self-end -mb-2 -skew-x-[20deg] kbm-bg-secondary">
+            <div className="translate-x-5 md:translate-x-1/4 self-end -mb-2 -skew-x-[20deg] kbm-bg-secondary">
               <h4 className="py-[1px] px-5 text-center uppercase kbm-white text-xs tracking-wider skew-x-[35deg]">
                 {subTitle}
               </h4>
