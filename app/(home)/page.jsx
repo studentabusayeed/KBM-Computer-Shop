@@ -2,7 +2,6 @@ import HomeBanner from "@/app/(home)/HomeBanner";
 import SideBanner from "@/app/(home)/SideBanner";
 import React from "react";
 import CategorySection from "./CategorySection";
-import KBM_Title from "@/app/(home)/KBM_Title"
 
 const HomePage = () => {
   return (
@@ -17,9 +16,6 @@ const HomePage = () => {
       </section>
       <section>
         <CategorySection />
-      </section>
-      <section>
-        <KBM_Title />
       </section>
     </>
   );

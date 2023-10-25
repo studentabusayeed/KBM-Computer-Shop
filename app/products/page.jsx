@@ -15,7 +15,7 @@ const ProductsPage = () => {
                         <p><span className='font-bold'>19 </span> Products found</p>
                         <ProductSortingMenu />
                     </div>
-                    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3'>
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
