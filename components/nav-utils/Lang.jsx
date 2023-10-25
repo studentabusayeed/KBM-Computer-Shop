@@ -13,7 +13,7 @@ export default function Language() {
           English
         </SelectItem>
         <SelectItem>
-          Bangla
+          Bangla  
         </SelectItem>
       </Select>
     </div>
