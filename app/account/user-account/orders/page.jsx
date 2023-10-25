@@ -10,14 +10,11 @@ const OrderPage = () => {
             <SectionTitle title="My Orders"/>
 
             <section>
-<section className='flex justify-between items-center py-5 px-2 bg-red-300 rounded-md mb-10'> 
-<div className='flex items-center gap-3'>
-<span className="text-xl">Orders:</span> <ShowOrderList/>
-</div>
-<div>
-<span className="text-xl mr-3">Totals:</span>
-</div>
-</section>
+<div className="flex items-center gap-5"><span className="text-xl">Orders:</span> <ShowOrderList/></div>
+<div className="flex justify-between px-3 py-8">
+          <h1 className="font-semibold text-2xl">Total Items:</h1>
+          <h2 className="font-semibold text-2xl">3</h2>
+        </div>
 
 <section>
 <OrderTable/>

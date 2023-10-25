@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, RadioGroup, Radio, Code, Chip, Avatar} from "@nextui-org/react";
+import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Code, Chip, Avatar} from "@nextui-org/react";
 
 export default function OrderTable() {
   const [selectedColor, setSelectedColor] = React.useState("success");
