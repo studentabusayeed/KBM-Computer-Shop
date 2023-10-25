@@ -2,7 +2,7 @@ import HomeBanner from "@/app/(home)/HomeBanner";
 import SideBanner from "@/app/(home)/SideBanner";
 import React from "react";
 import CategorySection from "./CategorySection";
-import KBM_Title from "@/app/(home)/KBM_Title"
+import KbmTitle from "../../components/KbmTitle/KbmTitle";
 
 const HomePage = () => {
   return (
@@ -19,7 +19,7 @@ const HomePage = () => {
         <CategorySection />
       </section>
       <section>
-        <KBM_Title />
+        <KbmTitle></KbmTitle>
       </section>
     </>
   );

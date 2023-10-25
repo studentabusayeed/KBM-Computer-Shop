@@ -10,7 +10,7 @@ const KbmTitle = () => {
                 All Categories 
             </h2>
             <div className="translate-x-5 md:translate-x-1/2 self-end -mb-2 -skew-x-[20deg] kbm-bg-secondary">
-                <h4 className="py-[1px] px-5 text-center uppercase font-semibold kbm-white text-xs tracking-wider skew-x-[35deg]">
+                <h4 className="py-[1px] px-5 text-center uppercase kbm-white text-xs tracking-wider skew-x-[35deg]">
                 Unlimited Category Choices 
                 </h4>
             </div>
