@@ -3,8 +3,6 @@ import SideBanner from "@/components/HomeComp/SideBanner";
 import React from "react";
 import CategorySection from "@/components/HomeComp/CategorySection";
 import SingleCategory from "@/components/HomeComp/SingleCategory";
-import HorOfferImage from "@/components/HomeComp/HorOfferImage";
-import image1 from "@/assets/offer-images-1.gif"
 
 const HomePage = () => {
   return (
@@ -19,7 +17,6 @@ const HomePage = () => {
       </section>
       <CategorySection />
       <SingleCategory />
-      <HorOfferImage imgLink={image1} />
       <SingleCategory />
     </>
   );

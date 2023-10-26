@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import connectMongoDB from "@/libs/mongodb";
-import Developer from "@/models/developer";
+import connectMongoDB from "@/backend/libs/mongodb";
+import Developer from "@/backend/models/developer";
 
 // POST request
 

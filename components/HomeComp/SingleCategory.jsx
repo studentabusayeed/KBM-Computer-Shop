@@ -6,15 +6,18 @@ import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/free-mode';
+import 'swiper/css/effect-fade';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
 import image1 from '@/assets/sing-cat-1.jpg'
 import image2 from '@/assets/sing-cat-2.jpg'
 import Image from 'next/image';
+import offImg from '@/assets/offer-images-2.gif'
 
 import './SingleCategory.css'
+import HorOfferImage from './HorOfferImage';
 
 const SingleCategory = () => {
     const progressCircle = useRef(null);
@@ -28,7 +31,7 @@ const SingleCategory = () => {
             <div className="kbm-container">
                 <KbmTitle title="Electronics & Appliances" subTitle="Choose your product" />
                 <div className='flex flex-col md:flex-row items-stretch justify-between gap-3 pt-10'>
-                    <div className='hidden md:block w-full md:w-1/4'>
+                    <div className='hidden md:block w-full md:w-[30%]'>
                         <Swiper
                             slidesPerView={1}
                             autoplay={{
@@ -38,7 +41,7 @@ const SingleCategory = () => {
                             effect={'fade'}
                             loop={true}
                             onAutoplayTimeLeft={onAutoplayTimeLeft}
-                            modules={[Pagination, Navigation, Autoplay]}
+                            modules={[EffectFade, Pagination, Navigation, Autoplay]}
                             className="mySwiper h-full rounded-xl"
                         >
                             <SwiperSlide>
@@ -55,7 +58,7 @@ const SingleCategory = () => {
                             </div>
                         </Swiper>
                     </div>
-                    <div className='w-full md:w-3/4 grid md:grid-cols-2 xl:grid-cols-3 gap-3'>
+                    <div className='w-full md:w-[70%] grid md:grid-cols-2 xl:grid-cols-3 gap-3'>
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
@@ -63,6 +66,9 @@ const SingleCategory = () => {
                         <ProductCard />
                         <ProductCard />
                     </div>
+                </div>
+                <div className='mt-8 rounded-xl overflow-hidden'>
+                    <HorOfferImage imgLink={offImg} />
                 </div>
             </div>
         </section>
