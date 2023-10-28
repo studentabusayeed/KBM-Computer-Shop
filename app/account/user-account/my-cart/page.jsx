@@ -1,11 +1,11 @@
-import SectionTitle from '@/components/SectionTitle';
+// import SectionTitle from '@/components/SectionTitle';
 import Image from 'next/image';
 import React from 'react';
 import iphoneImage from "@/assets/iphone.jpg"
 const MyCartPage = () => {
     return (
         <div>
-            <SectionTitle title="My Cart"/>
+            {/* <SectionTitle title="My Cart"/> */}
             <section>
             <div className="container mx-auto mt-10">
     <div className="flex shadow-md my-10">
