@@ -20,7 +20,7 @@ const ResponsiveNavbar = ({ menuItems }) => {
 //   const { user, setRole, logOut } = useContext(AuthContext);
   const [isOpen, setIsOpen] = useState("-ml-96");
   const menuRef = useRef();
-  const user = true;
+  const user = false;
 
   const handelLogOut = () => {
     // logOut()
@@ -90,13 +90,13 @@ const ResponsiveNavbar = ({ menuItems }) => {
               </div>
             ) : (
               <div className="flex flex-col gap-2 divide-y-2 divide-gray-3">
-                <Link className=" font-semibold text-neutral-600" href="/Login">
+                <Link className=" font-semibold text-neutral-600" href="/login">
                   <MenuItem className="gap-4 items-center">
                     <BiLogInCircle className="text-xl" />
                     Login
                   </MenuItem>
                 </Link>
-                <Link className=" font-semibold text-neutral-600" href="/signUp">
+                <Link className=" font-semibold text-neutral-600" href="/register">
                   <MenuItem className="gap-4 items-center">
                     <CgUserlane className="text-xl" />
                     Sign Up
