@@ -6,12 +6,12 @@ import ChartTwo from "@/components/Charts/ChartTwo";
 // import ChatCard from "../Chat/ChatCard";
 import TableOne from "@/components/TableOne";
 import CardDataStats from "@/components/CardDataStats";
-import SectionTitle from "@/components/SectionTitle";
+// import SectionTitle from "@/components/SectionTitle";
 import '@/components/Charts/Chart.css'
 const AdminDashboardPage = () => {
   return (
     <div className="no-scrollbar">
-    <SectionTitle title="Admin Dashboard"/>
+    {/* <SectionTitle title="Admin Dashboard"/> */}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
         <CardDataStats title="Total views" total="$3.456K" rate="0.43%" levelUp>
           <svg
