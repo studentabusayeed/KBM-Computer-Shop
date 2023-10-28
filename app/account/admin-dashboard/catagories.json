@@ -1,11 +1,11 @@
-[{
-   
-        "id": "08349820438lksdflkj",
+[
+    {
+        
         "name": "laptop&notebooks",
-        "feature_image": "path/image.jpg",
+        "feature_image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "slider_image": [
-            "path/image.jpg",
-            "path/image.jpg"
+            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ],
         "specification": [
             "panel size",
@@ -14,14 +14,13 @@
             "refresh rate",
             "resolution"
         ]
-    
-},
-{
+    },
+    {
         "name": "mobile",
-        "feature_image": "path/image.jpg",
+        "feature_image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "slider_image": [
-            "path/image.jpg",
-            "path/image.jpg"
+            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ],
         "specification": [
             "display size",
@@ -30,5 +29,5 @@
             "refresh rate",
             "speaker"
         ]
-    
-}]
+    }
+]

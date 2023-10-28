@@ -1,6 +1,6 @@
 [
     {
-        "id": "013223",
+        
         "basic_information": {
             "name": "ASUS ROG Strix SCAR 15 G533QR 15.6 Inch Full HD 300Hz Display Ryzen 9 5900HX 16GB RAM 1TB SSD Gaming Laptop With RTX 3070 8GB Graphics",
             "description": "ASUS ROG Strix SCAR 15 G533QR 15.6 Inch Full HD 300Hz Display Ryzen 9 5900HX 16GB RAM 1TB SSD Gaming Laptop With RTX 3070 8GB Graphics",
@@ -20,17 +20,17 @@
         },
         "category_name": "laptop&notebooks",
         "specification": {
-            "panel_size": "",
-            "viewing_angle": "",
-            "brightness": "",
-            "refresh_rate": "",
-            "resolution": ""
+            "panel_size": "10 inch",
+            "viewing_angle": "150 degree",
+            "brightness": "120 %",
+            "refresh_rate": "300 Hz",
+            "resolution": "1280, 233 "
         },
-        "video_link": "",
+        "video_link": "https://www.youtube.com/watch?v=IhVUwhZsXHo",
         "meta_data": {
-            "meta_title": "",
-            "meta_description": "",
-            "meta_tags": ""
+            "meta_title": "asus laptop",
+            "meta_description": "asus laptopasus laptopasus laptopasus laptopasus laptopasus laptopasus laptopasus laptopasus laptopasus laptopasus laptop",
+            "meta_tags": "asus, laptop, new, brand new"
         },
         "status": true,
         "discount": {
@@ -38,7 +38,7 @@
             "percentage": 11
         },
         "coupon": {
-            "coupon_code": "",
+            "coupon_code": "IMAM01",
             "coupon_discount": {
                 "fixed": 10,
                 "percentage": 11
@@ -63,19 +63,19 @@
                     {
                         "value_name": "small",
                         "stock": 10,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "medium",
                         "stock": 10,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "large",
                         "stock": 10,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     }
                 ]
@@ -92,63 +92,63 @@
                         "value_name": "red",
                         "size": "small",
                         "stock": 5,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price":5
                     },
                     {
                         "value_name": "red",
                         "size": "medium",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "red",
                         "size": "large",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "green",
                         "size": "small",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "green",
                         "size": "medium",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "green",
                         "size": "large",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "blue",
                         "size": "small",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "blue",
                         "size": "medium",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     },
                     {
                         "value_name": "blue",
                         "size": "large",
                         "stock":12,
-                        "image": "image.jpg",
+                        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1399&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         "price": 10
                     }
                 ]
