@@ -1,0 +1,34 @@
+[{
+   
+        "id": "08349820438lksdflkj",
+        "name": "laptop&notebooks",
+        "feature_image": "path/image.jpg",
+        "slider_image": [
+            "path/image.jpg",
+            "path/image.jpg"
+        ],
+        "specification": [
+            "panel size",
+            "viewing angle",
+            "brightness",
+            "refresh rate",
+            "resolution"
+        ]
+    
+},
+{
+        "name": "mobile",
+        "feature_image": "path/image.jpg",
+        "slider_image": [
+            "path/image.jpg",
+            "path/image.jpg"
+        ],
+        "specification": [
+            "display size",
+            "connectivity",
+            "brightness",
+            "refresh rate",
+            "speaker"
+        ]
+    
+}]

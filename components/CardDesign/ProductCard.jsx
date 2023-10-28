@@ -6,10 +6,11 @@ import '@smastrom/react-rating/style.css'
 import { BiCartAdd } from 'react-icons/bi';
 import { BsEye, BsHeart } from 'react-icons/bs';
 import { TbArrowsExchange } from 'react-icons/tb';
+import KbmButton from '../Utilities/KbmButton/KbmButton';
 
 
 const ProductCard = () => {
-   
+
     return (
         <div className="bg-white rounded-md shadow-md hover:shadow-xl overflow-hidden transition-shadow relative group h-fit">
             <p className="kbm-bg-secondary z-10 rounded py-1 px-2 text-xs lg:font-medium text-white absolute top-3 left-3"> -12% OFF</p>
@@ -28,9 +29,9 @@ const ProductCard = () => {
                 </div>
                 <div className='p-2'>
                     <div className="">
-                        <p className="text-gray-5 text-[8px] lg:text-[11px]">computer items</p>
+                        <p className="text-gray-5 text-[10px] lg:text-xs">computer items</p>
                         <Link href={`/details/`}>
-                            <h2 className="text-xs lg:text-sm font-medium text-gray-7 tracking-wide hover:underline inline-block hover:cursor-pointer">Univision LED350 17 60Hz AH LED Monitor</h2>
+                            <h2 className="text-base lg:text-base font-medium text-gray-7 tracking-wide hover:underline inline-block hover:cursor-pointer">Univision LED350 17 60Hz AH LED Monitor</h2>
                         </Link>
                     </div>
                     <div className="space-y-2">
@@ -44,9 +45,12 @@ const ProductCard = () => {
                         </p>
                     </div>
                 </div>
-                <button className='kbm-bg-primary flex items-center gap-1 py-2 w-full justify-center kbm-white rounded-md uppercase text-sm' type="button">
+                {/* <button className='kbm-bg-primary flex items-center gap-1 py-2 w-full justify-center kbm-white rounded-md uppercase text-sm' type="button">
                     <BiCartAdd className="text-base md:text-xl" /> add to cart
-                </button>
+                </button> */}
+                <div className='text-center text-xs'>
+                    <KbmButton btnType={'kbm-solid'} btnText={'Add To Cart'} btnIcon={<BiCartAdd className='w-5 h-5' />} />
+                </div>
             </div>
         </div>
     );

@@ -9,11 +9,9 @@ const Navbar = () => {
 
 
   return (
-    <div
-      className={`w-full bg-white transition-all relative top-0 z-50 duration-700 ease-in-out`}
-    >
-      <div className="nav-container">
-        <div className="hidden xl:block">
+    <div className={`w-full bg-white transition-all relative top-0 z-50 duration-700 ease-in-out border-b border-gray-200`}>
+      <div className="max-w-[1280px] w-full mx-auto px-3">
+        <div>
           <div className="flex items-center py-2 justify-between">
             <Logo />
             <Search />
@@ -23,12 +21,10 @@ const Navbar = () => {
               <NavWishlist />
               <NavCart />
               <NavAvatar />
-
             </div>
           </div>
         </div>
       </div>
-      <hr className="border-gray-3" />
     </div>
   );
 };

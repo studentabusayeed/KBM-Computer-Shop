@@ -1,21 +1,35 @@
 "use client";
 
 import React, { useState } from "react";
+// import KbmTitle from "@/components/KbmTitle/KbmTitle";
 import { useParams } from "next/navigation";
-import img1 from "../../../assets/banner1.webp";
 import Image from "next/image";
-import { Button, Chip } from "@nextui-org/react";
+import { Chip } from "@nextui-org/react";
 import ReactRating from "react-rating";
 import {
+  BsDashCircleDotted,
   BsHeart,
   BsHeartFill,
+  BsPlusCircleDotted,
   BsStar,
   BsStarFill,
   BsStarHalf,
 } from "react-icons/bs";
-import { FaCartPlus, FaMinus, FaPlus, FaShoppingBag } from "react-icons/fa";
-import { Magnifier } from "react-image-magnifiers";
-import KbmButton from "@/components/KbmButton/KbmButton";
+import { FaShoppingBag } from "react-icons/fa";
+import Reviews from "./Reviews";
+import Details from "./Details";
+import SimilarProduct from "./SimilarProduct";
+import KbmButton from "@/components/Utilities/KbmButton/KbmButton";
+import KbmTitle from "@/components/Utilities/KbmTitle/KbmTitle";
+import img1 from "../../../assets/banner1.webp";
+import {
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION
+} from "react-image-magnifiers";
 
 const productDetails = () => {
   const params = useParams();
@@ -38,16 +52,28 @@ const productDetails = () => {
 
   return (
     <div className="px-[3rem]">
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8 mb-20">
         <div>
-          <Magnifier
-            imageSrc="./banner6.png"
-            imageAlt="Image Alt Text"
-          />
-          {/* <Magnifier
-        imageSrc="./banner6.png"
-        imageAlt="Image Alt Text"
-      /> */}
+        {/* <ReactImageMagnify
+    {...{
+      smallImage: {
+        alt: "Wristwatch by Ted Baker London",
+        isFluidWidth: true,
+        src: img1.src,
+        srcSet: img1.src,
+        sizes: "(max-width: 480px) 100vw, (max-width: 1200px) 30vw, 360px"
+      },
+      largeImage: {
+        isFluidWidth: true,
+        src: img1.src,
+        width: 1200,
+        height: 1800
+      },
+      enlargedImageContainerStyle: {
+        zIndex: "1"
+      }
+    }}
+  /> */}
           <div className="border-2 flex py-8">
             <Image
               src={img1}
@@ -84,7 +110,7 @@ const productDetails = () => {
                 emptySymbol={<BsStar className="text-yellow-400" />}
                 fullSymbol={<BsStarFill className="text-yellow-400" />}
                 halfSymbol={<BsStarHalf className="text-yellow-400" />}
-              // readonly // Set this to true if you want to make it read-only
+                // readonly // Set this to true if you want to make it read-only
               />
               <p className="ml-1 font-light text-sm">7/10</p>
             </div>
@@ -145,37 +171,43 @@ const productDetails = () => {
 
           {/* price and quantity  */}
           <div className="flex items-center space-x-10 my-4">
+            {/* Quantity */}
+            <div className="w-29">
+              <div className="bg-gray-200 rounded-full flex flex-col items-center justify-center pt-1">
+                <div className="flex items-center justify-between w-full px-2">
+                  <button
+                    onClick={decrementQuantity}
+                    disabled={quantity === 1}
+                    className={`${
+                      quantity === 1 ? "cursor-not-allowed" : "cursor-pointer"
+                    }`}
+                  >
+                    <BsDashCircleDotted className=" kbm-primary w-6 h-6" />
+                  </button>
+
+                  <span className="text-xl leading-none font-semibold">
+                    {quantity}
+                  </span>
+
+                  <button
+                    onClick={incrementQuantity}
+                    className="cursor-pointer"
+                  >
+                    <BsPlusCircleDotted className="kbm-primary w-6 h-6" />
+                  </button>
+                </div>
+                <p className="font-semibold text-xs text-gray-500 text-center">
+                  Quantity
+                </p>
+              </div>
+            </div>
+
+            {/* price  */}
             <div>
               <h3 className="text-2xl font-bold">$ {totalPrice}</h3>{" "}
               {/* Display the total price */}
               <p className="font-light text-sm">BDT {totalPrice} tk</p>{" "}
               {/* Display the total price in BDT */}
-            </div>
-            <div className="w-24 aspect-w-16 aspect-h-9">
-              <div className="bg-gray-200 rounded-full flex flex-col items-center justify-center aspect-content">
-                <div className="flex items-center space-x-4">
-                  <button
-                    onClick={decrementQuantity}
-                    disabled={quantity === 1}
-                    className={`px-4 py-2 rounded-full bg-gray-300 hover:bg-gray-400 ${quantity === 1 ? "cursor-not-allowed" : "cursor-pointer"
-                      }`}
-                  >
-                    <FaMinus className="text-lg kbm-primary" />
-                  </button>
-
-                  <span className="text-xl font-semibold">{quantity}</span>
-
-                  <button
-                    onClick={incrementQuantity}
-                    className="px-4 py-2 rounded-full bg-gray-300 hover:bg-gray-400 cursor-pointer"
-                  >
-                    <FaPlus className="text-lg kbm-primary" />
-                  </button>
-                </div>
-                <p className="font-light text-sm text-gray-500 text-center">
-                  Quantity
-                </p>
-              </div>
             </div>
           </div>
 
@@ -185,13 +217,23 @@ const productDetails = () => {
               Add to Cart
             </Button>
           </div> */}
-          <div className="space-x-2 mt-2">
+          <div className="flex gap-2 mt-2 max-w-125 text-sm">
             <KbmButton />
-            <KbmButton btnType={'kbm-solid'} btnText={'buy now'} btnIcon={<FaShoppingBag className='w-5 h-5' />} />
+            <KbmButton
+              btnType={"kbm-solid"}
+              btnText={"buy now"}
+              btnIcon={<FaShoppingBag className="w-5 h-5" />}
+            />
           </div>
         </div>
       </div>
 
+      <KbmTitle title={"Product Details"} subTitle={"See Product Details"} />
+      <Details />
+      <KbmTitle title={"Product Reviews"} subTitle={"See Product Reviews"} />
+      <Reviews />
+      <KbmTitle title={"Similar Products"} subTitle={"See Similar Products"} />
+      <SimilarProduct />
     </div>
   );
 };

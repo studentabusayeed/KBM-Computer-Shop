@@ -1,0 +1,216 @@
+[
+    {
+        "id": "013223",
+        "basic_information": {
+            "name": "ASUS ROG Strix SCAR 15 G533QR 15.6 Inch Full HD 300Hz Display Ryzen 9 5900HX 16GB RAM 1TB SSD Gaming Laptop With RTX 3070 8GB Graphics",
+            "description": "ASUS ROG Strix SCAR 15 G533QR 15.6 Inch Full HD 300Hz Display Ryzen 9 5900HX 16GB RAM 1TB SSD Gaming Laptop With RTX 3070 8GB Graphics",
+            "model": "asus",
+            "Product_SKU": "asdfasd1235",
+            "brand": "asus",
+            "summary": "ASUS ROG Strix SCAR 15 G533QR 15.6 Inch Full HD 300Hz Display Ryzen 9 5900HX 16GB RAM 1TB SSD Gaming Laptop With RTX 3070 8GB Graphics",
+            "warranty": 1,
+            "image": {
+                "image": "",
+                "images": [
+                    "adfsa",
+                    "adsfads",
+                    "adfsdf"
+                ]
+            }
+        },
+        "category_name": "laptop&notebooks",
+        "specification": {
+            "panel_size": "",
+            "viewing_angle": "",
+            "brightness": "",
+            "refresh_rate": "",
+            "resolution": ""
+        },
+        "video_link": "",
+        "meta_data": {
+            "meta_title": "",
+            "meta_description": "",
+            "meta_tags": ""
+        },
+        "status": true,
+        "discount": {
+            "fixed": 10,
+            "percentage": 11
+        },
+        "coupon": {
+            "coupon_code": "",
+            "coupon_discount": {
+                "fixed": 10,
+                "percentage": 11
+            }
+        },
+        "single_product": {
+            "stock": 0,
+            "price": {
+                "regular_price": 3,
+                "sell_price": 2
+            }
+        },
+        "variables": [
+            {
+                "name": "size",
+                "values": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "options": [
+                    {
+                        "value_name": "small",
+                        "stock": 10,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "medium",
+                        "stock": 10,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "large",
+                        "stock": 10,
+                        "image": "image.jpg",
+                        "price": 10
+                    }
+                ]
+            },
+            {
+                "name": "color",
+                "values": [
+                    "red",
+                    "green",
+                    "blue"
+                ],
+                "options": [
+                    {
+                        "value_name": "red",
+                        "size": "small",
+                        "stock": 5,
+                        "image": "image.jpg",
+                        "price":5
+                    },
+                    {
+                        "value_name": "red",
+                        "size": "medium",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "red",
+                        "size": "large",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "green",
+                        "size": "small",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "green",
+                        "size": "medium",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "green",
+                        "size": "large",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "blue",
+                        "size": "small",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "blue",
+                        "size": "medium",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    },
+                    {
+                        "value_name": "blue",
+                        "size": "large",
+                        "stock":12,
+                        "image": "image.jpg",
+                        "price": 10
+                    }
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "user": "Customer123",
+                "rating": 4.5,
+                "comment": "I love this laptop! It's perfect for gaming."
+            },
+            {
+                "user": "User456",
+                "rating": 5.0,
+                "comment": "The performance is outstanding!"
+            }
+        ],
+        "shipping_information": {
+            "shipping_options": [
+                "Standard Shipping",
+                "Express Shipping"
+            ],
+            "delivery_time": [
+                "5-7 business days",
+                "2-3 business days"
+            ],
+            "shipping_fees": [
+                0,
+                15
+            ]
+        },
+        "related_products": [
+            "ProductID123",
+            "ProductID456",
+            "ProductID789"
+        ],
+        "return_and_refund_policy": "If you're not satisfied with your purchase, you can return it within 30 days for a full refund.",
+        "payment_and_financing_options": {
+            "payment_methods": [
+                "Credit Card",
+                "PayPal",
+                "Apple Pay",
+                "Google Pay"
+            ],
+            "financing_options": [
+                "0% APR financing for 12 months"
+            ]
+        },
+        "product_qa": [
+            {
+                "question": "Is this laptop suitable for video editing?",
+                "answer": "Yes, it's a powerful laptop for video editing."
+            },
+            {
+                "question": "What's the battery life like?",
+                "answer": "The laptop offers up to 8 hours of battery life."
+            }
+        ],
+        "product_recommendations": [
+            "ProductID101",
+            "ProductID202",
+            "ProductID303"
+        ]
+    }
+]
