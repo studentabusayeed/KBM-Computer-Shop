@@ -1,0 +1,19 @@
+{
+    "id": "lkjdlkjasdl",
+    "basic_information": {
+        "product_name": "this is product",
+        "feature_image": "this is image",
+        "image_gallery": [
+            "lkdfjkj",
+            "lksdjfla",
+            "lksdjf"
+        ],
+        "warranty": 360,
+        "price": 34,
+        "": ""
+    },
+    "category": "Laptop & Notebook",
+    "specification": {
+        "connectype": "bluthooth"
+    }
+}
