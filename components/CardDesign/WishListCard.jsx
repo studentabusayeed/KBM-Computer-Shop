@@ -47,7 +47,7 @@ const WishListCard = () => {
                     <div className="space-y-2">
                         <div className='flex gap-3 items-center'>
                             {/* <Rating style={{ maxWidth: 60 }} value={4.5} readOnly itemStyles={customStyles} /> */}
-                            <span class="bg-[#4277433a] text-xs font-semibold px-2.5 py-0.5 rounded">4.5</span>
+                            <span className="bg-[#4277433a] text-xs font-semibold px-2.5 py-0.5 rounded">4.5</span>
                         </div>
                         <p className="inline-flex gap-1">
                             <span className="font-medium text-my-pink inline-flex items-center text-sm lg:text-lg">$9098</span>

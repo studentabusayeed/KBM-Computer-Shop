@@ -116,4 +116,4 @@ const productSchema = new Schema({
   product_recommendations: relatedProductsSchema
 });
 
-export default productSchema;
+module.exports =  productSchema;

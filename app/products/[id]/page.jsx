@@ -1,20 +1,8 @@
-"use client";
 
-import React, { useState } from "react";
+import React from "react";
 // import KbmTitle from "@/components/KbmTitle/KbmTitle";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import { Chip } from "@nextui-org/react";
-import ReactRating from "react-rating";
-import {
-  BsDashCircleDotted,
-  BsHeart,
-  BsHeartFill,
-  BsPlusCircleDotted,
-  BsStar,
-  BsStarFill,
-  BsStarHalf,
-} from "react-icons/bs";
 import { FaShoppingBag } from "react-icons/fa";
 import Reviews from "./Reviews";
 import Details from "./Details";
@@ -22,34 +10,29 @@ import SimilarProduct from "./SimilarProduct";
 import KbmButton from "@/components/Utilities/KbmButton/KbmButton";
 import KbmTitle from "@/components/Utilities/KbmTitle/KbmTitle";
 import img1 from "../../../assets/banner1.webp";
-import {
-  Magnifier,
-  GlassMagnifier,
-  SideBySideMagnifier,
-  PictureInPictureMagnifier,
-  MOUSE_ACTIVATION,
-  TOUCH_ACTIVATION
-} from "react-image-magnifiers";
+{// import {
+//   Magnifier,
+//   GlassMagnifier,
+//   SideBySideMagnifier,
+//   PictureInPictureMagnifier,
+//   MOUSE_ACTIVATION,
+//   TOUCH_ACTIVATION
+// } from "react-image-magnifiers";
+}
+import loadProductsData from "../../../utils/loadProductsData";
+import Price from "./Price";
+import Rating from "./Rating";
+import FavoriteButton from './FavoriteButton';
+import Variants from "./Variants";
 
-const productDetails = () => {
-  const params = useParams();
-  const { productId } = params.id;
-  const [isLoved, setIsLoved] = useState(false);
-  const [quantity, setQuantity] = useState(1);
-  const pricePerUnit = 250.0;
+const productDetails = async () => {
+  // const params = useParams();
+  // const { productId } = params.id;
+  const products = await loadProductsData()
 
-  const decrementQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const incrementQuantity = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const totalPrice = (quantity * pricePerUnit).toFixed(2);
-
+  const totalPrice = 120;
+  console.log('57 ====>', products);
+  console.log('57 ====>', products?.variables[0].values);
   return (
     <div className="px-[3rem]">
       <div className="grid grid-cols-2 gap-8 mb-20">
@@ -101,101 +84,43 @@ const productDetails = () => {
         </div>
         <div>
           {/* Product Info */}
-          <p className="text-blue-400 underline">Category</p>
-          <h2 className="text-2xl font-bold">Greate Product Name Gose Heare</h2>
+          <p className="text-blue-400 underline">{products?.category_name}</p>
+          <h2 className="text-2xl font-bold">{products?.basic_information.name}</h2>
           <div className="flex items-center gap-4">
             <div className="flex items-center">
-              <ReactRating
-                initialRating={3}
-                emptySymbol={<BsStar className="text-yellow-400" />}
-                fullSymbol={<BsStarFill className="text-yellow-400" />}
-                halfSymbol={<BsStarHalf className="text-yellow-400" />}
-                // readonly // Set this to true if you want to make it read-only
-              />
+            <Rating/>
               <p className="ml-1 font-light text-sm">7/10</p>
             </div>
             <div className="flex items-center gap-1">
-              <div
-                onClick={() => {
-                  setIsLoved(!isLoved);
-                }}
-              >
-                {isLoved ? (
-                  <BsHeartFill className="text-red-400" />
-                ) : (
-                  <BsHeart />
-                )}
-              </div>
+              <FavoriteButton/>
               <p className="font-light text-sm">Save for latter</p>
             </div>
           </div>
           <hr className="my-2" />
-          <h4 className="font-semibold text-lg">Sort description</h4>
+          <h4 className="font-semibold text-lg">Short description</h4>
           <ul className="list-disc">
-            <li className="ml-5 font-light text-sm">Made in Russia</li>
+            {/* <li className="ml-5 font-light text-sm">Made in Russia</li>
             <li className="ml-5 font-light text-sm">Wolf latrher</li>
             <li className="ml-5 font-light text-sm">black ad dsfkash</li>
-            <li className="ml-5 font-light text-sm">red id adaasfa</li>
+            <li className="ml-5 font-light text-sm">red id adaasfa</li> */}
+                <div>
+      {Object.entries(products?.specification).map(([key, value]) => (
+         
+         <li key={key} className="ml-5 font-light text-sm">{key.split("_").join(" ")}: {value}</li>
+          
+      ))}
+    </div>
+
           </ul>
           <p className="mt-2">Available Variant</p>
-          <div className="flex items-center gap-2">
-            <Chip
-              radius="sm"
-              className="border-[#427743] kbm-primary"
-              variant="bordered"
-            >
-              Small
-            </Chip>
-            <Chip
-              radius="sm"
-              className="border-[#427743] kbm-primary"
-              variant="bordered"
-            >
-              Medium
-            </Chip>
-            <Chip
-              radius="sm"
-              className="border-[#427743] kbm-primary"
-              variant="bordered"
-            >
-              Large
-            </Chip>
-            <Chip
-              radius="sm"
-              className="border-[#427743] kbm-primary"
-              variant="bordered"
-            >
-              Extra Large
-            </Chip>
-          </div>
+         <Variants variants={products?.variables[0].values}/>
 
           {/* price and quantity  */}
           <div className="flex items-center space-x-10 my-4">
             {/* Quantity */}
             <div className="w-29">
               <div className="bg-gray-200 rounded-full flex flex-col items-center justify-center pt-1">
-                <div className="flex items-center justify-between w-full px-2">
-                  <button
-                    onClick={decrementQuantity}
-                    disabled={quantity === 1}
-                    className={`${
-                      quantity === 1 ? "cursor-not-allowed" : "cursor-pointer"
-                    }`}
-                  >
-                    <BsDashCircleDotted className=" kbm-primary w-6 h-6" />
-                  </button>
-
-                  <span className="text-xl leading-none font-semibold">
-                    {quantity}
-                  </span>
-
-                  <button
-                    onClick={incrementQuantity}
-                    className="cursor-pointer"
-                  >
-                    <BsPlusCircleDotted className="kbm-primary w-6 h-6" />
-                  </button>
-                </div>
+               <Price/>
                 <p className="font-semibold text-xs text-gray-500 text-center">
                   Quantity
                 </p>
@@ -204,9 +129,9 @@ const productDetails = () => {
 
             {/* price  */}
             <div>
-              <h3 className="text-2xl font-bold">$ {totalPrice}</h3>{" "}
+              <h3 className="text-2xl font-bold">$ {products?.single_product.price.regular_price}</h3>{" "}
               {/* Display the total price */}
-              <p className="font-light text-sm">BDT {totalPrice} tk</p>{" "}
+              <p className="font-light text-sm">BDT {products?.single_product.price.regular_price} tk</p>{" "}
               {/* Display the total price in BDT */}
             </div>
           </div>

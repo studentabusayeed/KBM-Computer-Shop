@@ -1,3 +1,4 @@
+"use client"
 import { Progress } from "@nextui-org/react";
 import ReviewCard from "./ReviewCard";
 import { BsStarFill } from "react-icons/bs";
